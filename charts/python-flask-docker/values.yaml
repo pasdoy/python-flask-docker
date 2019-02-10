@@ -4,8 +4,8 @@
 replicaCount: 2
 
 image:
-  repository: draft
-  tag: dev
+  repository: 10.43.252.195:5000/pasdoy/python-flask-docker
+  tag: 0.0.10
   pullPolicy: IfNotPresent
 
 service:
