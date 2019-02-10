@@ -30,9 +30,4 @@ spec:
           value: {{ template "mariadb.fullname" . }}
         - name: SKIP_DB_WAIT
           value: "1"
-        - name: MARIADB_PASSWORD
-          valueFrom:
-            secretKeyRef:
-            name: {{ template "mariadb.fullname" . }}
-            key: mariadb-root-password
         
